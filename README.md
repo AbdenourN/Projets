@@ -1,5 +1,3 @@
-# Projets
-
 
 <h1> Mes différents projets durant mon BUT INFORMATIQUE. </h1>
 
