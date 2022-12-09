@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>🔵 Concours - Eloquencia</title>
+    
+    <link rel="icon" href="..\img\favicon.png">
+    <link rel="stylesheet" type="text/css" href="..\css\nvx.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+        /* PARTIE GALLERIE IMAGE*/
+            
+            div.gallery {
+            margin: 5px;
+            border: 1px solid rgb(0, 0, 0);
+            position: absolute;
+
+            left: 5%;
+            position: left;
+            width: 300px;
+            
+            }
+
+            div.gallery:hover {
+            border: 1px solid rgb(0, 0, 0);
+            }
+
+            div.gallery img {
+            width: 100%;
+            height: auto;
+            
+            }
+
+            div.desc {
+            padding: 15px;
+            text-align: center;
+            color: black;
+            }
+            #img_1{
+                display:block;
+            }
+            #img_2{
+                display:none;
+            }
+            #img_3{
+                display:none;
+            }
+            #img_4{
+                display:none;
+            }
+            #img_5{
+                display:none;
+            }
+        /* IMAGE  */
+        
+        @font-face {font-family: Playball; src: url('Playball.TTF');}
+        @font-face {font-family: AlexBrush-Regular; src: url('AlexBrush-Regular.TTF');}
+        #mini-titre{
+            
+            text-align: center;
+            color: #000000;
+            font-family: 'Lato', sans-serif;
+            width: 50%;
+        }
+        #video{
+            padding: 3%;
+        }
+        p {
+            font-family: Playball;
+            text-align: center;
+            font-size: 20px;
+        }
+        #img_3206{
+            border: solid black 3px;
+            
+            padding: 2px;
+        }
+        #img_3214{
+            border: solid black 3px;
+            
+        }
+        #img_3238{
+            border: solid black 10px;
+            
+        }
+        #liste{
+            padding-bottom: 10%;
+            color: black;
+            
+        }
+        #gauche{
+           display: inline-block ;
+           cursor: pointer;
+        }
+        #droite{
+           display: inline-block ;
+           cursor: pointer;
+        }
+        #copyright{
+                color:#000000e8;
+                padding: 2%;
+                margin: 3%;
+                font-family: 'Lato', sans-serif;
+                text-align: center;
+            }
+        
+        #contexte{
+            display:block;
+            width: 40%;
+            font-family: 'Lato', sans-serif;
+            padding: 2%;
+            margin-bottom: 5%;
+            margin-left: 30%;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        @font-face {font-family: Playball; src: url('Playball.TTF');}
+        h1 {
+            font-family: Playball;
+            margin-top: 10%;
+            margin-left:30% ;
+            margin-right: 30%;
+            padding: 2%;
+            
+            color: rgb(0, 0, 0);
+        }
+        h2{
+            text-align: center;
+            
+            font-family: AlexBrush-Regular;
+            color: black;
+        }
+        
+        #Passage_oussama{
+            display: inline-block;
+            padding: 3%;
+        }
+        #Passage_youssef{
+            display: inline-block;
+            padding: 3%;
+        }
+        #Passage_quentin{
+            display: inline-block;
+            padding: 3%;
+        }
+        #Passage_Sylla{
+            font-family: Playball;
+            ;
+            
+        }
+        
+        #Passage_gagnants{
+            font-family: Playball;
+            padding: 5%;
+            display: none;
+        }
+        footer{
+            color: white;
+            background-color: grey;
+            padding: 50px;
+        }
+        .column {
+        float: left;
+        width: 40%;
+        
+        }
+
+        .photo_amphi{
+            width: 300px;
+            text-align: center;
+            margin-left: 20%;
+        }
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        #interview{
+            width: 100%;
+        }
+        #h2_context{
+            text-align: left;
+            width: 10%;
+        }
+        .bouton_gagnants {
+            width: 200px;
+            height: 100px;
+            color: rgb(0, 0, 0);
+            background-color: #ffffff;
+            cursor: pointer;
+            margin: 50px;
+            background-color: rgb(34, 185, 55);
+            text-decoration: none;
+            font-family: Playball;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header" role="banner">
+        <div id="nav" role="navigation" aria-label="main">
+            <div id="logo">
+                <a id="logo" href="https://iutv.univ-paris13.fr"> <img src="..\img\PinClipart.com_eclipse-mars-svn_5201290.png"  width="115" height="50" alt="iutv" /></a>
+            </div>
+            <ul>
+                <li><a href="..\Accueil\Accueil.html">Accueil</a></li>
+                <li><a href="..\Concours\concours.html" aria-current="true">Concours</b></a></li>
+                <li><a href="..\Equipe\equipe.html">Notre équipe</a></li>
+                <li><a href="..\Album\Album.html">Album photo</a></li>
+                <li><a href="..\Mentions\mentions.html">Mentions Légales</a></li>
+            </ul>
+        </div>
+    </div>
+<div id="la_galerie">
+    <div class="gallery" id="img_1">
+        <a target="_blank" href="..\img\galerie\IMG_3204.jpg">
+          <img src="..\img\galerie\IMG_3204.jpg" alt="passage_yous" width="600" height="400">
+        </a>
+        <div class="desc">Passage de Youssef</div>
+      </div>
+      
+      <div class="gallery" id="img_2">
+        <a target="_blank" href="..\img\galerie\IMG_3215.jpg">
+          <img src="..\img\galerie\IMG_3215.jpg" alt="passage_kais" width="600" height="400">
+        </a>
+        <div class="desc">Passage de Kais</div>
+      </div>
+      
+      <div class="gallery" id="img_3">
+        <a target="_blank" href="..\img\galerie\IMG_3209.jpg">
+          <img src="..\img\galerie\IMG_3209.jpg" alt="passage_tin" width="600" height="400">
+        </a>
+        <div class="desc">Passage de Tinhinane</div>
+      </div>
+      
+      <div class="gallery" id="img_4">
+        <a target="_blank" href="..\img\galerie\IMG_3220.jpg">
+          <img src="..\img\galerie\IMG_3220.jpg" alt="passage_brune" width="600" height="400">
+        </a>
+        <div class="desc">Passage de Brunella</div>
+      </div>
+      <div class="gallery" id="img_5">
+        <a target="_blank" href="..\img\galerie\IMG_3229.jpg">
+          <img src="..\img\galerie\IMG_3229.jpg" alt="passage_sylla" width="600" height="400">
+        </a>
+        <div class="desc">Passage de Sylla</div>
+      </div>
+    </div>
+<center style="color: black;">
+    <div id="plp">
+    <h1> Le concours d'éloquence du 14 avril 2022</h1>
+    <h2 style="text-indent: -40%;"> Contexte : </h2>
+    <p><div id="contexte">
+        A la suite d'une évaluation à l'oral lors des cours de communication des BUT 1ère année, les professeurs ont repéré de potentiels élèves qui pourront passer pour un concours </br>
+    </br>
+        Il y avait dans chaque groupe deux élèves qui sont passés à l'oral dans un amphithéâtre devant toute la promotion ainsi que deux élèves en plus pour un total de 12 personnes. Voici la liste des orateurs</br>
+    </div>
+    <div class="row">
+        <div class="column">
+        
+        <img id="img_3206" src="..\img\IMG_3234.jpg" width="400" height="300"></div>
+        <div class="column">
+        <div id="liste"><ul>
+            <div id="gauche">
+                <ul><li>David</li> <li>Teva</li> <li>Oussama</li><li>Youssef</li><li>Tinhinane</li><li>Quentin</li></ul>
+            </div>
+            <div id="droite">
+                <ul><li>Ann</li><li>Kais</li><li>Mazigh</li><li>Brunella</li><li>Sylla</li> <li>Keinan</li></ul>
+            </div>
+            <P style="text-align: inherit;left: 20%;">Pour reconnaitre les personnes cliquez sur les noms au-dessus ! </P>
+            
+        </div>
+        
+        </div>
+      </div>
+      <HR  WIDTH="85%" size="6" noshade="">
+        <h2> L'amphithéâtre</h2>
+    </br>
+    <div class="row">
+        <div class="column"><p class="photo_amphi" style="font-family: 'Lato', sans-serif;">Voici une photo de l'amphithéâtre , tous les étudiants présents étaient ici pour encourager leur classe</p>
+        
+        <img id="img_3206" src="..\img\IMG_3206.jpg" width="400" height="300"> </div>
+        
+        </br></br>
+        <div class="column">
+        <p class="photo_amphi_droit" style="font-family: 'Lato', sans-serif;">De plus voici un extrait de Kais. </p>
+        <video id ="img_3214" width="390" height="220" controls>
+            <source src="..\img\IMG_3214.mp4" type="video/mp4">
+            
+          Votre navigateur ne permet pas de visioner cette vidéo.
+        </video> 
+        </div>
+    </p>
+    </div>
+    </div>
+    
+    <div id="plp2">
+        <HR  WIDTH="85%" size="5" noshade="" >
+        <h2 id="mini-titre" >Dès lors que tous les orateurs étaient passés c'était au jury de départager qui sera le gagnant, alors en attendant, nous les avons <strong> interviewés </strong></h2></br>
+    </br>
+    <h2 id="mini-titre">Mais juste avant parlons aux spéctateurs ! </h2></br>
+    
+            <p style="font-family: 'Lato', sans-serif;">Interview de Samuel : </br><iframe width="560" height="315" src="https://www.youtube.com/embed/r2Ph9m-LrC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p></br>
+
+            <div id="interview">
+                
+                <div id="Passage_oussama">
+                    <p style="font-family: 'Lato', sans-serif;">1ère interview avec oussama : </br><iframe width="560" height="315" src="https://www.youtube.com/embed/TmFd23Oi6kg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </p></br>
+                </div>
+
+                <div id="Passage_youssef">
+                    <p style="font-family: 'Lato', sans-serif;">2ème interview avec youssef : </br><iframe width="560" height="315" src="https://www.youtube.com/embed/FLIk7h9VV-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </iframe>
+                        </p></br>
+                </div>
+                <div id="Passage_quentin">
+                    <p style="font-family: 'Lato', sans-serif;">3ème interview avec quentin : </br><iframe width="560" height="315" src="https://www.youtube.com/embed/CWHe2z4dmg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </p></br>
+                </div>
+            </div>
+            
+            <div id="passage_fin">
+                <HR  WIDTH="85%" size="6" noshade="">
+                <h2 id="mini-titre">Nous avons fini nos interviews, et il est l'heure de voir qui sont les grands gagnants</h2></br></br></br>
+                <div id="Passage_Sylla">
+                <span>La troisième place sera attribuée à Sylla qui avait fait un stand-up improvisé .</span></br></br></br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/19sRv72a0ik?clip=UgkxamUXboL0T8Og7d6C-9gVabiFxHfTPPjj&amp;clipt=EI3eERjvthQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </br>
+                </div>
+                <input class="bouton_gagnants"
+                type="button"
+                value="Afficher le grands gagnants">
+                <div id="Passage_gagnants">
+                    Et au final il n'y aura pas de deuxième place mais deux premières places attribuées à Tinhinane et Kais !</br></br></br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/19sRv72a0ik?clip=UgkxOTpnGKVDLoeqlsxmIaJEzC-HZOw7QMIg&amp;clipt=EJXTFBjlhhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h2>Et malheuresement comme tout magnifique événement il y a une fin !  </h2>
+                            <p> On vous remercie d'avoir lu jusqu'à la fin en vous souhaitant de bonnes soutenances orales !
+                            </br><img src="..\img\galerie\IMG_3229.jpg" alt="passage_sylla" width="400" height="533">
+                            </p>
+                </div>
+                
+            </div>
+            
+                
+            
+    </div>
+    
+    <footer id ="copyright" style="color: black;border: 2px solid black;">
+        Copyright © 2022 Etudiants du groupe Pegasus a l' Université Sorbonne Paris Nord  – Tous droits réservés | <a href="..\Mentions\mentions.html">Mentions légales</a> 
+    </footer>
+</center>
+<script src="confetti.js"></script>
+<script>
+    
+document.querySelector(".bouton_gagnants").addEventListener('click',function(){
+    setTimeout(function() {
+                confetti.start()
+            }, 100); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); };
+
+        
+        stop();
+    });
+            
+    let gagnants = document.querySelector('.bouton_gagnants');
+    gagnants.addEventListener('click',function(){
+        document.getElementById('Passage_gagnants').style.display='block'
+    });
+
+    const mon_timer=setInterval(img_func, 5000);
+    let id_img=2;
+    $(document).ready(function() {
+            setTimeout(function(){$("div.gallery img").toggleClass("transparent")},9000) 
+            });
+        
+            $(document).ready(function() {
+            setTimeout(function(){$("div.gallery img").toggleClass("transparent");},10000) 
+            });
+        
+    function img_func(){
+        console.log('yo')
+        clearInterval;
+        $(document).ready(function() {
+            setTimeout(function(){$("div.gallery img").toggleClass("transparent")},9000) 
+            });
+        
+            $(document).ready(function() {
+            setTimeout(function(){$("div.gallery img").toggleClass("transparent");},10000) 
+            });
+        let img_1 = document.getElementById('img_1');
+        let img_2 = document.getElementById('img_2');
+        let img_3 = document.getElementById('img_3');
+        let img_4 = document.getElementById('img_4');
+        
+        
+        if(id_img==4){
+            img_2.style.display='none';
+            img_3.style.display='none';
+            img_4.style.display='block';
+            img_1.style.display='none';
+            
+            id_img=1;
+            return;
+        }
+        if(id_img==3){
+            img_1.style.display='none';
+            img_2.style.display='none';
+            img_3.style.display='block';
+            img_4.style.display='none';
+            
+        }
+        if(id_img==2){
+            img_1.style.display='none';
+            img_2.style.display='block';
+            img_3.style.display='none';
+            img_4.style.display='none';}
+        if(id_img==1){
+            img_1.style.display='block';
+            img_2.style.display='none';
+            img_3.style.display='none';
+            img_4.style.display='none';
+            
+        };
+        
+        id_img+=1;
+    
+    };
+    
+    document.getElementById('liste').addEventListener('click',function(event){
+        if(event.target.textContent=="David"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_DAVID.jpg"
+            return;
+        }
+        if(event.target.textContent=="Teva"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_TEVA.jpg"
+            return;
+        }
+        if(event.target.textContent=="Oussama"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_OUSSAMA.jpg"
+            return;
+        }
+        if(event.target.textContent=="Youssef"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_YOUSSEF.jpg"
+            return;
+        }
+        if(event.target.textContent=="Tinhinane"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_Tinhinane.jpg"
+            return;
+        }
+        if(event.target.textContent=="Quentin"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_QUENTIN.jpg"
+            return;
+        }
+        if(event.target.textContent=="Ann"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_ANN.jpg"
+            return;
+        }
+        if(event.target.textContent=="Kais"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_KAIS.jpg"
+            return;
+        }
+        if(event.target.textContent=="Mazigh"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_MAZIGH.jpg"
+            return;
+        }
+        if(event.target.textContent=="Brunella"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_BRUNELLA.jpg"
+            return;
+        }
+        if(event.target.textContent=="Sylla"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_SYLLA.jpg"
+            return;
+        }
+        if(event.target.textContent=="Keinan"){
+            document.querySelector('#img_3206').src="../img/IMG_3234_KEINAN.jpg"
+            return;
+        }
+    });
+</script>
+</body>
+</html>

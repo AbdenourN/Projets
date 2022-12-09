@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Formulaire</title>
+<style type="text/css">
+@font-face {font-family: AlexBrush-Regular; src: url('ALEXBRUSH-REGULAR.TTF');}
+#formtxt {
+    font-family: AlexBrush-Regular;
+    text-align: center;
+    font-size: 20px;
+}
+.ds_box {
+    background-color: #FFF;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 32767;
+}
+ 
+.ds_tbl {
+    background-color: #FFF;
+}
+ 
+.ds_head {
+    background-color: #333;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+ 
+.ds_subhead {
+    background-color: #CCC;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 32px;
+}
+ 
+.ds_cell {
+    background-color: #EEE;
+    color: #000;
+    font-size: 13px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    cursor: pointer;
+}
+ 
+.ds_cell:hover {
+    background-color: #F3F3F3;
+} 
+ 
+</style>
+    <link rel="shortcut icon" href="/logo.ico" type="image/ico" />
+    <link rel="stylesheet" type="text/css" href="..\css\nvx.css" media="screen" />
+</head>
+<body>
+    <div id="header" role="banner">
+         <div id="logo">
+            <a href="/"><img src="..\logo.ico" width="160" height="60" alt="Mariage de Franck & Dana" /></a>
+        </div>
+        <div id="nav" role="navigation" aria-label="main">
+            <ul>
+                <li><a href="..\Accueil\Accueil.html">Accueil</a></li>
+                <li><a href="..\Cérémonie\ceremonie.html">Cérémonie</b></a></li>
+                <li><a href="..\Formulaire\formulaire.html" aria-current="true">Formulaire</a></li>
+                <li><a href="..\Album\Album.html">Album photo</a></li>
+                <li><a href="..\A_propos\apropos.html">A propos</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <center>
+<form action="form.txt" method="get">
+   <div class="contactez-nous">
+   <h1>Contactez-nous</h1>
+<p id="formtxt">Bonjour et bienvenue au mariage de Franck & Dana, nous sommes heureux de vous voir présent à cet heureux événement, pour mieux connaître vos préférences, veuillez remplir ce formulaire.</p>
+<form action="/page-traitement-donnees" method="post">
+<div>
+   <p> Vous êtes ?</br>
+   <input type="radio" name="civi" value="Mme" /> Madame
+   <input type="radio" name="civi" value="Mlle" /> Mademoiselle
+   <input type="radio" name="civi" value="Mr" /> Monsieur
+</p>
+<label for="nom">Votre nom</label>
+<input type="text" id="nom" name="nom" placeholder="Martin" required>
+</div>
+<div>
+<label for="prenom">Prénom</label>
+<input type="text" id="prenom" name="prenom" placeholder="DuBois" required/>
+</div>
+<div>
+<label for="tel">Votre Numéro de téléphone</label>
+<input type="tel" id="tel" name="tel" placeholder="0602030401">
+</div>
+<div>
+<label for="sujet">Quand seriez-vous présent ?</label>
+<select name="sujet" id="sujet" required>
+<option value="" disabled selected hidden>Quand ?</option>
+<option value="qst_cere">Seulement à la Mairie</option>
+<option value="qst_salle">Seulement à la Salle</option>
+<option value="lesdeux">Les deux</option>
+</select>
+</div>
+<div>
+<label for="msg">Seriez-vous accompagné ?</label>
+<p>
+<input type="radio" name="rep" value="msg" /> Oui
+<input type="radio" name="rep" value="Non"/> Non
+</p>
+</div>
+<div>
+<label for="msg">Avez-vous un logement près du Mariage ?</label>
+<p>
+<input type="radio" name="repo" value="yes" /> Oui
+<input type="radio" name="repo" value="Non" onclick="window.open('../A_propos/apropos.html') " alt=""/> Non
+</p>
+</div>
+<div>
+<label for="msg">Avez vous des allergies alimentaires ?</label>
+<p>
+<input type="radio" name="rep" value="msg" /> Oui
+<input type="radio" name="rep" value="Non"/> Non
+</p>
+</div>
+<div>
+<label for="message">Si oui lesquels ?</label>
+<textarea id="message" name="message" placeholder="Je suis allergique aux...."></textarea>
+</div>
+
+    <label for="t">Indiquez le début de votre séjour  </label>  
+    <textarea id="message" name="message" placeholder="22/02/2022"></textarea>
+    <label for="t">Indiquez la de fin de votre séjour  </label>
+    <textarea id="message" name="message" placeholder="26/04/22"></textarea>
+<div>
+<button type="submit" onclick="alert('Formulaire Envoyée')">Envoyer ma réservation</button>
+</div>
+</form>
+</center>
+</div>
+</body>
+</html>

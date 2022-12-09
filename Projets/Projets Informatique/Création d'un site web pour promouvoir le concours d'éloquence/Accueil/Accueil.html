@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title> 🔵 Accueil - Eloquencia</title>
+    <link rel="icon" href="..\img\favicon.png">
+    <link rel="stylesheet" type="text/css" href="..\css\main.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+            @font-face {font-family: Playball; src: url('Playball.TTF');}
+            @font-face {font-family: AlexBrush-Regular; src: url('AlexBrush-Regular.TTF');}
+
+        #main{
+            display: table-row-group;
+        }
+        #plp {
+            font-family: Playball;
+            font-size: 65px;
+            color: rgb(0, 0, 0);
+            padding-top: 100px;
+           
+            }
+        #txtt{
+            color: #000000e8;
+            width: 40px;
+            height: 30px;
+            padding-left: 20px;
+        }
+            h1 {
+                
+                height: fit-content;
+                
+                color: #000000e8;}
+
+            #bvn { font-family: Playball;
+                color: #000000e8;
+                
+                
+                
+                display: inline-block;
+                margin: 2%;
+                padding: 3px;
+                }
+                #bvn1 { font-family: Playball;
+                color: #000000e8;
+                
+                
+                
+                display: inline-block;
+                margin: 2%;
+                padding: 3px;
+                }
+                #bvn2 { font-family: Playball;
+                color: #000000e8;
+                
+                
+                display: inline-block;
+                margin: 2%;
+                padding: 3px;
+                }
+                #bvn3 { font-family: Playball;
+                color: #000000e8;
+                
+                
+                display: inline-block;
+                margin: 2%;
+                padding: 3px;
+                }
+            #journee {font-family: 'Lato', sans-serif;
+                        color: #000000e8;
+                        border: #ffffff solid;
+                        border-color: rgb(0, 0, 0);
+                        display: none;
+                        background-color: #ffffff;
+                        
+                        margin: 3%;
+                        width: 40%;
+                        padding: 3%;
+                        font-size: 17px;
+                    text-align: left;}
+            #journee2 {font-family: 'Lato', sans-serif;
+                        color: #000000e8;
+                        border: #041622 solid;
+                        border-color: rgb(0, 0, 0);
+                        display: none;
+                        background-color: #ffffff;
+                        text-align: initial;
+                        font-size: 17px;
+                        padding: 1%;
+                        width: 40%;}            
+            #journee3 {font-family: 'Lato', sans-serif;
+                        color: #000000e8;
+                        border: #041622 solid;
+                        border-color: rgb(0, 0, 0);
+                        display: none;
+                        padding: 2%;
+                        font-size: 17px;
+                        margin: 3%;
+                        width: 40%;
+                    }
+            #journee3_1{
+                padding: 5%;
+            }
+            .cpl {width: 600px;}
+            #journee2_2 {font-family: 'Lato', sans-serif;
+                        color: rgb(0, 0, 0);
+                        border: 2px solid black;
+                        
+                        display: inline-block;
+                        
+                        font-size: 22px;
+                        padding: 1%;
+                        margin: 2%;
+                    }
+                    #copyright{
+                color:#000000e8;
+                padding: 2%;
+                margin: 3%;
+                font-family: 'Lato', sans-serif;
+                text-align: center;
+            }
+            .curseur{
+                cursor: pointer;
+            }
+            #map{
+                padding: 10%;
+                width: 50%;
+                
+            }
+            #logo_iut{
+                position: absolute;
+                top: 30px;
+                left: 20px;
+            }
+            footer{
+            color: white;
+            background-color: grey;
+            padding: 50px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        #onglets{
+            padding-top: 200px;
+            width: 1600px;
+        }
+
+        div #journee_all{
+            width: 500px;
+            height: 100px;
+            position: relative;
+            padding-top: 20px;
+            margin-top: 50px;
+        }
+
+        div #journee_all::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 50%;
+            left: 25%;
+            border-top: 1px solid red;
+        }
+
+        /* PARTIE GALLERIE IMAGE*/
+        div.gallery {
+            margin-bottom: 15%;
+            width: 700px;
+            height: 300px;
+            margin:0 auto;
+            }
+
+            
+
+            div.gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 25%;
+            -webkit-transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -o-transition: opacity 1s ease-in-out;
+            transition: opacity 1s ease-in-out;
+            }
+
+            div.gallery img.transparent {
+            opacity:0;
+            }
+
+            div.desc {
+            padding: 15px;
+            text-align: center;
+            color: black;
+            }
+            
+            #img_1{
+                display:block;
+            }
+            #img_2{
+                display:none;
+            }
+            #img_3{
+                display:none;
+            }
+            #img_4{
+                display:none;
+            }
+            #img_5{
+                display:none;
+            }
+        /* IMAGE  */
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="header" role="banner">
+        
+        <div id="nav" role="navigation" aria-label="main">
+            <div id="txtt">
+                <p ><a id="logo" href="https://iutv.univ-paris13.fr" ><img id ="logo_iut"src="..\img\PinClipart.com_eclipse-mars-svn_5201290.png" alt="logo"  width="115" height="50"></a></p>
+            </div>
+            <ul>
+                <li><a href="..\Accueil\Accueil.html" aria-current="true">Accueil</a></li>
+                <li><a href="..\Concours\concours.html">Concours</b></a></li>
+                <li><a href="..\Equipe\equipe.html">Notre équipe</a></li>
+                <li><a href="..\Album\Album.html">Album photo</a></li>
+                <li><a href="..\Mentions\mentions.html">Mentions Légales</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    
+    <center>
+    <main id="main">
+        <h1 id ="plp"> Grande journée de l'éloquence</h1>
+        <center>
+            
+            <h1 id="bvn"> Bienvenue a la grande journée de l'éloquence</br> Nous vous souhaitons la bienvenue à cet heureux événement . </H1>
+                </br>
+                
+                <div id="la_galerie">
+                    <div class="gallery" id="img_1">
+                        <a target="_blank" href="..\img\Affiche\1_p1.png">
+                          <img src="..\img\Affiche\1_p1.png" alt="Affiche" >
+                        </a>
+                        
+                      </div>
+                      
+                      <div class="gallery" id="img_2">
+                        <a target="_blank" href="..\img\Affiche\1_p2.png">
+                          <img src="..\img\Affiche\1_p2.png" alt="Affiche">
+                        </a>
+                        
+                      </div>
+                      
+                      <div class="gallery" id="img_3">
+                        <a target="_blank" href="..\img\Affiche\2_p1.png">
+                          <img src="..\img\Affiche\2_p1.png" alt="Affiche" >
+                        </a>
+                        
+                      </div>
+                      
+                      <div class="gallery" id="img_4">
+                        <a target="_blank" href="..\img\Affiche\2_p2.png">
+                          <img src="..\img\Affiche\2_p2.png" alt="Affiche" >
+                        </a>
+                        
+                      </div>
+                      
+                    </div>
+                </br></br></br>
+                <div id="onglets">
+                <h1 class="curseur" id="bvn1"> Quel est cette journée ? </H1> 
+                <h1 class="curseur" id="bvn2"> Quels sont les horaires ? </H1> 
+                <h1 class="curseur" id="bvn3"> Où ce passera cette journée ? </H1> </br>
+                </div>
+                <div id="journee_all">
+                    <p id="journee">Cette journée consiste à rassembler les meilleurs orateurs qui s'affronteront devant un public </br>
+                        Un jury composé de professeurs enseignants ici à Villetaneuse, seront présents sur place pour alors juger leur prestation</br>
+                        C'est grâce à ce jury que à la fin seront énoncés les grands gagnants de cette rencontre</p></br>
+                    <div id="journee2">
+                        <ul>
+                            <strong>Le 17 juin 2022 à l'université de la Sorbonne Paris Nord.</strong></br></br>
+                        <li> De 9h30 à 12h30 se passera <strong>l'Atelier d'éloquence </strong></li>
+                        <li>De 13h30 à 15h00 vous pourrez assister à une <strong>rencontre avec des spécialistes</strong> </li>
+                        <li>De 15h00 à 17h00 se passera le <strong>concours d'éloquence</strong> à ne pas rater ! </li>
+                        </ul>
+                        </div></br>
+                        
+                    <p id="journee3">
+                        <span id="journee3_1">La grande journée de l'éloquence se déroulera a l' Université Sorbonne Paris Nord située à l'adresse 99 Av. Jean Baptiste Clément, 93430 Villetaneuse</br> </span>
+                        </br>
+                        <span id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83870.94267240474!2d2.2662330108818116!3d48.935071147101475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66922af4c2e23%3A0xfe3113a781a13fca!2sUniversit%C3%A9%20Sorbonne%20Paris%20Nord!5e0!3m2!1sfr!2sfr!4v1654533977833!5m2!1sfr!2sfr" width="500" height="450" style="border: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </span></br>
+                    </p>
+                </div>
+                </br><p id="journee2_2">Pour plus d'info n'hésitez pas et appelez le secrétariat au 01 49 40 30 00</p>
+                                    </br>
+                  <img class="cpl"
+            src="https://media.lesechos.com/api/v1/images/view/5e5645ca3e45463f6458b868/1280x720/13377-1542283404-shutterstock-1170155062.jpg"
+            alt="image_eloquente">
+            
+        </br>
+
+            
+
+             </center>
+            </main> 
+            <footer id ="copyright" style="color: black;border: 2px solid black;">
+                Copyright © 2022 Etudiants du groupe Pegasus a l' Université Sorbonne Paris Nord  – Tous droits réservés | <a href="..\Mentions\mentions.html">Mentions légales</a> 
+            </footer>
+
+           
+
+    
+    
+    <script>
+        const mon_timer=setInterval(img_func, 10000);
+    let id_img=2;
+    /*
+    var opa=0;
+        function transi(x1,x2){
+            if(opa==100){
+                opa=0;
+                return;
+            }
+            console.log(opa); 
+            opa=10+opa;
+            x2.style.opacity=10+'%'
+            x1.style.opacity=(100-opa)+"%"
+            console.log(x1)
+            console.log(opa)
+        }
+        */
+        
+        
+        $(document).ready(function() {
+            setTimeout(function(){$("div.gallery img").toggleClass("transparent")},9000) 
+            });
+        
+            $(document).ready(function() {
+            setTimeout(function(){$("div.gallery img").toggleClass("transparent");},10000) 
+            });
+        
+    function img_func(){
+        console.log('yo')
+        clearInterval;
+        $(document).ready(function() {
+            setTimeout(function(){$("div.gallery img").toggleClass("transparent")},9000) 
+            });
+        
+            $(document).ready(function() {
+            setTimeout(function(){$("div.gallery img").toggleClass("transparent");},10000) 
+            });
+        let img_1 = document.getElementById('img_1');
+        let img_2 = document.getElementById('img_2');
+        let img_3 = document.getElementById('img_3');
+        let img_4 = document.getElementById('img_4');
+        
+        
+        if(id_img==4){
+            img_2.style.display='none';
+            img_3.style.display='none';
+            img_4.style.display='block';
+            img_1.style.display='none';
+            
+            id_img=1;
+            return;
+        }
+        if(id_img==3){
+            img_1.style.display='none';
+            img_2.style.display='none';
+            img_3.style.display='block';
+            img_4.style.display='none';
+            
+        }
+        if(id_img==2){
+            img_1.style.display='none';
+            img_2.style.display='block';
+            img_3.style.display='none';
+            img_4.style.display='none';}
+        if(id_img==1){
+            img_1.style.display='block';
+            img_2.style.display='none';
+            img_3.style.display='none';
+            img_4.style.display='none';
+            
+        };
+        
+        id_img+=1;
+    
+    };
+
+        console.log('yo');
+        let onglets = document.querySelector('#onglets');
+        let bvn1 = document.getElementById('bvn1');
+        let bvn2 = document.getElementById('bvn2');
+        let bvn3 = document.getElementById('bvn3');
+        bvn1.addEventListener('click',function(){
+            console.log(event.target);
+            bvn2.style.backgroundColor='white';
+            bvn3.style.backgroundColor='white';
+            bvn1.style.backgroundColor='#5482a0';
+            bvn2.style.display='inline-block';
+            bvn3.style.display='inline-block';
+            document.querySelector('#journee2').style.display='none';
+            document.querySelector('#journee3').style.display='none';
+            document.querySelector('#journee').style.display='inline-block';
+            return;
+            });
+            bvn2.addEventListener('click',function(){
+                bvn1.style.backgroundColor='white';
+                bvn3.style.backgroundColor='white';
+            bvn1.style.display='inline-block';
+            bvn2.style.backgroundColor='#5482a0';
+            bvn3.style.display='inline-block';
+            console.log('bnv2');
+            document.querySelector('#journee2').style.display='inline-block';
+            document.querySelector('#journee3').style.display='none';
+            document.querySelector('#journee').style.display='none';
+            });
+            bvn3.addEventListener('click',function(){
+            console.log('bnv3');
+            bvn1.style.backgroundColor='white';
+            bvn2.style.backgroundColor='white';
+            bvn1.style.display='inline-block';
+            bvn2.style.display='inline-block';
+            bvn3.style.backgroundColor='#5482a0';
+            document.querySelector('#journee2').style.display='none';
+            document.querySelector('#journee3').style.display='inline-block';
+            document.querySelector('#journee').style.display='none';
+        });
+        
+    </script>
+</body>
+</html>

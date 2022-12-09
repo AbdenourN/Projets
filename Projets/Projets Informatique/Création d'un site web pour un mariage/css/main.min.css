@@ -1,0 +1,68 @@
+#nav{width:100%;line-height:1}
+#nav ul{display:flex;justify-content:center;margin:0;padding:0;list-style:none}
+#nav li{margin:0}
+#nav li+li{margin-left:0px}
+#nav a{display:block;padding:30px 30px;color:darkred;}
+#nav a:focus,
+#nav a:hover{outline:0px solid;outline-offset:0px;}
+#nav a[aria-current]{padding-bottom:4px;border-bottom:3px solid;}
+#nav b{font-weight:400px}
+@media only screen and (max-width:520px)
+{#nav li+li{margin-left:2px}#nav a{padding:8px 16px 16px}}
+#nav {margin-left: auto; margin-right: auto; border-bottom: 1px solid black;} 
+#nav {border-top: 1px solid black;}
+#nav{background: #FFFFFF2E;}
+
+body {
+background: #ebc8b2;
+font-family: "Montserrat", "sans-serif";
+display: center;
+justify-content: center;
+color: #303030;
+}
+
+@font-face {font-family: AlexBrush-Regular src:url('AlexBrush-Regular.TTF');}
+
+#plp {
+    font-family: AlexBrush-Regular;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #plp {
+    font-family: Playball;
+    font-size: 65px;
+    color: darkred;
+    text-align: center;
+    line-height: 1.251em;
+    }
+    h1 { text-align: center;}
+
+    #bvn { font-family: Playball;
+        color: #da9970;
+        border: 4px solid black;
+        background-color: white;
+        border-color: saddlebrown;
+        display: inline-block;
+        }
+    #rencontre {
+      font-family: Playball;
+                color: #da9970;
+                border: 4px solid black;
+                border-color: saddlebrown;
+                display: inline-block;
+                background-color: white;
+                font-size: 22px;}
+
+    .cpl {width: 800px;}
+
+    #rencontre2 {font-family: Playball;
+                color: red;
+                border: 4px solid black;
+                border-color: saddlebrown;
+                display: inline-block;
+                background-color: white;
+                font-size: 22px;}
+
+
+
