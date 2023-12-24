@@ -1,0 +1,108 @@
+ /* Mise en forme de la page */
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     color: #3498DB;
+     background-color: #34495E;
+ }
+
+ /* Mise en forme de l'en-tête */
+ header {
+     background-color: #ECF0F1;
+     padding: 17px;
+     text-align: center;
+ }
+
+ /* Mise en forme de la section de contenu */
+ main {
+     padding: 20px;
+ }
+
+ /* Mise en forme de l'image de profil */
+ img.profile-image {
+     border-radius: 50%;
+     width: 20%;
+     height: 20%;
+     border: solid;
+     position: relative;
+     margin-left: 7%;
+ }
+
+ /* Mise en forme des informations de profil */
+ .profile-info {
+     margin-top: 20px;
+     text-align: center;
+     border: double 4px;
+     width: 50%;
+     height: 30%;
+     position: absolute;
+     margin-left: 40%;
+     top: 15%;
+     background-color: #F5F5F5;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+ }
+
+ .profile-info h2 {
+     margin-bottom: 10px;
+     font-size: 200%;
+     font-weight: bold;
+ }
+
+ .profile-info p {
+     margin-bottom: 10px;
+     font-size: 150%;
+ }
+
+ .profile-info a {
+     color: blue;
+     text-decoration: none;
+ }
+
+ /* Mise en forme des sections de compétences */
+ .skills {
+     margin-top: 20px;
+     border: double 4px;
+     background-color: #F5F5F5;
+     overflow: auto;
+     position: absolute;
+     width: 85%;
+     height: 35%;
+     margin-left: 5.2%;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+ }
+
+ /* Mise en forme des sections de compétences */
+ .skills h3 {
+     margin-bottom: 10px;
+ }
+
+ /* Mise en forme des sections de compétences */
+ .skills ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ .logo {
+     width: 15%;
+     /* Taille de l'image */
+     height: 15%;
+     /* Taille de l'image */
+     
+     /* Espacement entre le logo et le titre */
+    
+     top: 0%;
+
+ }
+
+ header
+ {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+ }
