@@ -1,9 +1,14 @@
+# Projets du Programme BUT Informatique
 
-<h1> Mes différents projets durant mon BUT INFORMATIQUE. </h1>
+## Présentation
+Ce répertoire regroupe les différents projets que j'ai réalisés au cours de mon cursus en BUT Informatique et mes projets personnel. Certains ont été effectués individuellement tandis que d'autres ont été réalisés en binôme ou en groupe.
 
+## Confidentialité et Anonymat
+Pour préserver la confidentialité et respecter la vie privée de mes camarades, aucun nom ne sera mentionné dans les documents ou les fichiers liés aux projets réalisés en groupe.
 
+## Structure du Répertoire
+- Chaque projet est regroupé dans un dossier séparé pour faciliter la navigation et la compréhension.
+- Les projets sont accompagnés de leurs descriptions, fichiers sources et documentations associées le cas échéant.
 
-Certains de mes projets on était réalisé tout seul et certains en binôme ou en groupe.
-
-
-Pour respecter l'anonymat de mes camarades, leur nom ne sera pas cité dans les différents documents s'ils ont été réalisés à plusieurs.
+## Remarque
+Ce répertoire est destiné à mettre en valeur mes réalisations académiques et personnel et ne contient aucun projet sensible ou confidentiel.
