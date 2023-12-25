@@ -34,7 +34,7 @@ import numpy as np
 from matplotlib import animation
 from IPython.display import HTML
 import matplotlib.pyplot as plt
-
+```
 ## Remarque
 
 Ce README fournit une vue d'ensemble du projet, mais il est important de consulter les fichiers et documents associés pour une compréhension approfondie. Les fichiers Python contiennent des implémentations algorithmiques détaillées, tandis que l'utilisation de LaTeX est destinée à présenter des formules mathématiques.
